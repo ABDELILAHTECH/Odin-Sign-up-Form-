@@ -1,0 +1,127 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: System-ui;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.container{
+    display: grid;
+    height: 100%;
+    width: 1000px;
+    grid-template-columns: 40% 60%;
+}
+#background_img{
+    background-image: 
+    url("imgs/halie-west-25xggax4bSA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    position: relative;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 150PX;
+}
+#logo p{
+    font-size: 40px;
+    
+}
+#img_credit{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+#img_credit a{
+    color: white;
+}
+
+main{
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30PX;
+}
+#description{
+    font-size: 17PX;
+    font-weight: 600;
+    padding: 0 30px;
+}
+#infos{
+    background-color: #FFFFFF;
+    box-shadow: 3px 1px 8px
+     rgba(59, 54, 54, 0.564) ;
+     padding: 7px 30px;
+     padding-bottom: 20px;
+}
+fieldset{
+    border: none;
+}
+fieldset legend{
+    font-size: 19px;
+    font-weight: 600;
+    
+}
+fieldset > div,fieldset > div > div{
+    display: flex;
+}
+fieldset > div{
+    width: 400px;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+fieldset > div > div{
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(92, 89, 89, 0.961);
+    gap: 2PX;
+}
+fieldset > div > div input{
+    padding: 2px 5px;
+    border-radius: 3px;
+    border: 1px solid
+     rgba(92, 89, 89, 0.394);
+}
+input:active,input:focus{
+    outline: none;
+}
+#emailInput:valid , input[type = "password"]:focus{
+    border: 2px solid rgb(20, 158, 20);
+}
+#emailInput:invalid ,input[type = "password"]{
+    border: 2px solid rgba(243, 39, 39, 0.388);
+}
+button{
+    background-color: #596D48;
+    margin: 0 30px;
+    margin-top: 25px;
+    padding: 6px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 17px;
+    font-weight: -600;
+    cursor: pointer;
+}
+#log_in{
+    margin: 15px 30px;
+}
+#log_in a{
+    color: #596D48;
+    text-decoration: none;
+}
